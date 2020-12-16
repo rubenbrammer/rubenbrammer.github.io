@@ -58,7 +58,7 @@ nav {
     .nav-children{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 90%;
         top: 8vh;
         background-color: #20639b;
         display: flex;
