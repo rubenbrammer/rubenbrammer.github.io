@@ -50,11 +50,6 @@ const navSlide = () => {
         timer = null;
     }
 
-
-
-
-
-
 const app = () => {
 navSlide();
 }
