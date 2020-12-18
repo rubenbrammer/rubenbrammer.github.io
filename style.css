@@ -104,6 +104,41 @@ nav {
         transform: translateX(0%);
         z-index: 2;
     }
+
+    .intro {
+        height: 92vh;
+    }
+    
+    .intro h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4vw;
+        color: white;
+    }
+    
+    span {
+        opacity: 0;
+        transition: all 3s ease;
+        display: inline-block;
+        transform: translateY(60px);
+        color: black;
+    }
+    
+    span.fade {
+        opacity: 1;
+        transform: translateY(0px);
+        color: rgb(255, 255, 255);
+    }
+    
+    .intro img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    
 }
 
 @keyframes navLinkFade {
@@ -115,6 +150,8 @@ nav {
         opacity: 1;
         transform: translateX(0px);
     }
+
+    
 }
 
 /*This is for the main picture on the landing spot*/
