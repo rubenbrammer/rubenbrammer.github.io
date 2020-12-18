@@ -52,6 +52,8 @@ const navSlide = () => {
 
 const app = () => {
 navSlide();
+onTick();
+complete();
 }
 
 
