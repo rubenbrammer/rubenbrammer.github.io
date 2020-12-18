@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family:'Roboto', sans-serif;
+}
+
+/*This is for the header*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -22,7 +27,7 @@ nav {
 
 .nav-children {
     display: flex;
-    width: 40%;
+    width: 30%;
     justify-content: space-around;
 }
 
@@ -50,9 +55,26 @@ nav {
     transition: all 0.3s ease;
 }
 
+.pressBurger .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.pressBurger .line2{
+    opacity: 0;
+}
+
+.pressBurger .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*This is for a smaller viewport i.e smartphones */
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
+    }
+
+    .logo {
+        letter-spacing: 2px;
     }
 
     .nav-children{
@@ -80,21 +102,9 @@ nav {
 
     .nav-active{
         transform: translateX(0%);
+        z-index: 2;
     }
 }
-
-.pressBurger .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.pressBurger .line2{
-    opacity: 0;
-}
-
-.pressBurger .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
 
 @keyframes navLinkFade {
     from{
@@ -106,3 +116,40 @@ nav {
         transform: translateX(0px);
     }
 }
+
+/*This is for the main picture on the landing spot*/
+.intro {
+    height: 92vh;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: white;
+}
+
+span {
+    opacity: 0;
+    transition: all 3s ease;
+    display: inline-block;
+    transform: translateY(60px);
+    color: black;
+}
+
+span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+    color: rgb(255, 255, 255);
+}
+
+.intro img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
